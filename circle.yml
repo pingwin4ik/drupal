@@ -13,8 +13,7 @@ dependencies:
 test:
   pre:
     - composer global require "hirak/prestissimo:^0.3"
-    - composer require "wikimedia/composer-merge-plugin:~1.4" --no-interaction
-    - composer self-update
+    - composer require "wikimedia/composer-merge-plugin:~1.4.2" --no-interaction
     - composer update -n -d ./scripts
     - sudo chown -R 82:82 .
   override:
